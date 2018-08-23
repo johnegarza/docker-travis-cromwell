@@ -16,4 +16,4 @@ RUN pip install 'ruamel.yaml==0.14.2'
 
 RUN wget https://github.com/broadinstitute/cromwell/releases/download/34/cromwell-34.jar
 
-ENTRYPOINT ["java", "-jar", "cromwell-34.jar", "run", "-t", "cwl", "-t", "cwl", "-i", "./cancer-genomics-workflow/example_data/exome_workflow.yaml", "./cancer-genomics-workflow/exome_workflow.cwl"]
+ENTRYPOINT ["java", "-jar", "cromwell-34.jar", "run", "-t", "cwl", "-i", "./cancer-genomics-workflow/example_data/exome_workflow.yaml", "./cancer-genomics-workflow/exome_workflow.cwl"]
